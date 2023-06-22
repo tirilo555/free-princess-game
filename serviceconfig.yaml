@@ -1,0 +1,26 @@
+services:
+  MapPosition:
+    class: './src/map-position'
+  GameMap:
+    class: './src/game-map'
+  Game:
+    class: './src/game'
+    arguments: [ '@GameMap' ]
+  Inventory:
+    class: './src/inventory'
+  FightActionStrategy:
+    class: './src/strategies/player/fight-action.strategy'
+  HideWeaponActionStrategy:
+    class: './src/strategies/player/hide-weapon-action.strategy'
+  Fighting:
+    class: './src/fighting'
+  GameMoveActionStrategy:
+    class: './src/strategies/game/game-move-action.strategy'
+  GamePickupActionStrategy:
+    class: './src/strategies/game/game-pickup-action.strategy'
+  GameHideWeaponActionStrategy:
+    class: './src/strategies/game/game-hide-weapon-action.strategy'
+  GameUseActionStrategy:
+    class: './src/strategies/game/game-use-action.strategy'
+  GameFightActionStrategy:
+      class: './src/strategies/game/game-fight-action.strategy'
