@@ -1,6 +1,7 @@
-# free-princess-game
+# Free princess
 Консольна гра "Визволи принцесу"
 
-Запускається на NodeJS сервері
-
+## Start
+``` bash
 npm run start-course-work
+```
